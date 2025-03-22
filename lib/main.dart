@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/pages/home_page.dart';
 
 
 void main() {
-  runapp(MyApp());
+  runApp(const MyApp());
 
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
+
+    );
   }
 }
 
